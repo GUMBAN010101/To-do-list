@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To Do List</title>
+	<link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+
+	<input type="checkbox" class="checkbox">
+	
+	<div class="digital-clock">
+		<div class="time">
+			<span class="hours">00</span>
+			<span class="dots">:</span>
+			<span class="minutes">00</span>
+			<div class="right-side">
+				<span class="period">AM/PM</span>
+				<span class="seconds">00</span>
+			</div>
+		</div>
+		<div class="calendar">
+			<span class="month-name">Month</span>,
+			<span class="day-name">Day</span>
+			<span class="day-number">00</span>
+			<span class="year">0000</span>
+		</div>
+	</div>
+	
+	<header>
+		<h1>My To Do List</h1>
+		<form id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="What do you have planned?" />
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="Add task" />
+		</form>
+	</header>
+	<main>
+		<section class="task-list">
+			<h2>Tasks</h2>
+
+			<div id="tasks">
+			</div>
+		</section>
+	</main>
+
+	<script src="main.js"></script>
+	<script src="clock.js"></script>
+</body>
+</html>
